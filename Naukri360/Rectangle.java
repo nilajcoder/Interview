@@ -28,7 +28,8 @@ public class Rectangle {
 
              int l=sc.nextInt();
             int b=sc.nextInt();
-            System.out.println(l*b);
+            System.out.println(l*b); 
+            
         
     }
 
