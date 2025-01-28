@@ -17,10 +17,22 @@ So Simple interest=Principal*rate*time/100 hence
 answer is 2000*2.2*4/100=176
  */
 
+import java.util.Scanner;
 
- public class SimpleIn {
+public class SimpleIn {
  
     public static void main(String[] args) {
         
+      Scanner sc=new Scanner(System.in);
+      int p=sc.nextInt();
+      double r=sc.nextDouble();
+      int t=sc.nextInt();
+
+      double si=(p*r*t)/100;
+
+      System.out.println((int)(si));
+
+
+
     }
  }
