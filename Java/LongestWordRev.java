@@ -3,6 +3,7 @@
 
  WAP :Reverse only the big words in a sentence 
  (e.g., "reverse the big word only" → "esrever the big word only")
+  first letter of longest word
 */
 
 import java.util.Scanner;
@@ -32,6 +33,9 @@ public class LongestWordRev {
         String longestwordrev=reverseWord(longest);
         System.out.println("Longest Word in the String is =" + longest);
         System.out.println("Longest Word Reverse = "+ longestwordrev);
+
+        System.out.println("First Word of Longest word = " + longest.charAt(0));
+
 
       }
 }
