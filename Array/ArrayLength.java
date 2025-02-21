@@ -1,3 +1,10 @@
+/*
+ * 
+ * WAP Length OF an Array 
+ * 
+ */
+
+
 import java.util.Scanner;
 
 public class ArrayLength {
