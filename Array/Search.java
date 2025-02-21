@@ -12,7 +12,7 @@ public class Search {
         for(int i=0;i<arr.length;i++){
             if (arr[i]==n) {
             System.out.println(n +" is found at "+  i);
-                
+                   
             }
         }
 
