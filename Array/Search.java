@@ -1,3 +1,9 @@
+
+/*
+ * WAP Serach an element Print the index of search element
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Search {
