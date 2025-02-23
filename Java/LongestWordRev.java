@@ -20,6 +20,20 @@ public class LongestWordRev {
             return longest;
       }
 
+      public static String ShortestWord(String st) {
+        String[] words = st.split(" ");
+        if (words.length == 0)
+         
+         return ""; // Handle empty input case
+
+        String shortest = words[0]; // Initialize with the first word
+        for (String word : words) {
+            if (word.length() < shortest.length()) {
+                shortest = word;
+            }
+        }
+        return shortest;
+    }
       public static String reverseWord(String word) {
         return new StringBuilder(word).reverse().toString();
     }
@@ -33,8 +47,8 @@ public class LongestWordRev {
         String longestwordrev=reverseWord(longest);
         System.out.println("Longest Word in the String is =" + longest);
         System.out.println("Longest Word Reverse = "+ longestwordrev);
-
         System.out.println("First Word of Longest word = " + longest.charAt(0));
+        System.out.println("Shortest Word in a String =  "+ ShortestWord(str));
 
 
       }
