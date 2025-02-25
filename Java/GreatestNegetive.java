@@ -1,3 +1,7 @@
+
+/*
+ * Greatest Negetive Number
+ */
 import java.util.Scanner;
 
 public class GreatestNegetive {
