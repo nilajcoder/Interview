@@ -1,3 +1,7 @@
+
+/*
+ * Write a JAVA Program to interchange values of two numbers using third variable
+ */
 import java.util.Scanner;
 
 class SwapThird{
