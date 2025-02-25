@@ -1,3 +1,8 @@
+
+/*
+ * Write a JAVA Program to interchange values of two numbers without
+ using third variable.
+ */
 import java.util.Scanner;
 
 public class Swap{
