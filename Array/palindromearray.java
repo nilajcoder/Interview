@@ -1,4 +1,13 @@
 
+
+/*
+ * 9. Check Palindrome Array
+Write a program to check if an array is a palindrome. Example:
+Input: [1, 2, 3, 2, 1]
+Output: true
+ * 
+ * 
+ */
 public class palindromearray {
 
     public static boolean isPalindrome(int[] arr) {
