@@ -1,3 +1,23 @@
+
+/*
+STRING DECLARATION
+
+
+import java.util.*;
+public class Hi{
+   public static void main(String args[]) {
+       String name="Nilaj";
+	   System.out.println(name);   
+   }
+}
+E:\>javac Hi.java
+
+E:\>java Hi
+Nilaj
+
+
+*/
+
 import java.util.Scanner;
 
 public class StringInput {
@@ -11,6 +31,8 @@ public class StringInput {
          String str=sc.nextLine();
          System.out.println("Enter Second String ");
          String st=sc.nextLine();
+         System.out.println("First String is = "+ str);
+         System.out.println("Second String is = "+st);
 
          /*
           * Declaration Type 1
