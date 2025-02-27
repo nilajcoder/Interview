@@ -39,6 +39,16 @@ temp[8] = "channel"
           }
         }
         System.out.println(count);
+
+        /*
+         * Total number of Word
+         */
+
+          // Split the string by spaces
+        String words[] = str.split("\\s+");
+
+        // Print the total number of words
+        System.out.println("Total number of words: " + words.length);
     }
          
 }
