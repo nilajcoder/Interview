@@ -29,6 +29,19 @@ public class ReverseArray {
         for(int i=arr.length-1;i>=0;i--){
             System.out.print(arr[i]+ " ");
 
+            /*
+             * arr[]={20,30,40,50}
+             * i=arr.length=4-1=3  ;3>=0;i--  
+             * 50
+             * i=2 ;2>=0;i--
+             * 50 40
+             * i=1 ;1>=0;i--
+             * 50 40 30
+             * i=0;0>=0;i--
+             * 50 40 30 20
+             * 
+             */
+
 
         }
 
