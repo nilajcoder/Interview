@@ -1,5 +1,11 @@
-import java.util.Scanner;
 
+
+/*
+ * WAP FIND a Factorial Of a  number
+ * Input =5
+ * Output =120
+ */
+/* 
 public class Factorial{
 
     public static int facto(int n){
@@ -11,13 +17,27 @@ public class Factorial{
             return n*facto(n-1);// 
         }
     }
+ */
 
+ import java.util.Scanner;
+public class Factorial {
     public static void main(String args[]){
 
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter a number");
+        int fact=1;
         int a=sc.nextInt();
-        System.out.println("Factorial Of a Number is = "+facto(a));
+        for(int i=1;i<=a;i++){
+            fact=fact*i;
+           
+
+        }
+
+        System.out.println("Factorial of a number = "+fact);
 
     }
 }
+
+    
+
+    
