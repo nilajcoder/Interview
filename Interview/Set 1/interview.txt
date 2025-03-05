@@ -1,0 +1,50 @@
+Which version of Java you're using?
+Can we override protected methods in another package child class or not?
+Internal HashMap implementation for PUT and GET methods
+Java 8 features
+Use of static methods in an interface?
+Exception Handling related (throw/throws usage etc.,)
+IndexOutOfBoundException hierarchy
+Write one custom exception
+Create a class and add constructors and methods. How will you call these?
+SOLID principles
+OOPs features
+Exception vs errors (how you will handle these two)
+List all the exceptions you know
+
+
+
+2nd Round (Technical + Managerial)
+
+Introduction,
+Na experience medha,
+Nenu chesina work medha ques
+Final keyword gurunche
+Reflection APIs
+Exception usage throw/throws
+Key features of OOPS
+Abstraction and encapsulation examples
+HashMap and HashSet difference (At what scenarios we need to use)
+ArrayList vs LinkedList difference
+Memory leaks, how to resolve
+Em em design patterns used
+
+Other than singleton pattern...
+Builder design pattern ani cheppa, code rayamannadu dhaniki
+2 threads create chesi common method ni execute cheyali
+
+Both interfere avvakunda execute avvali...
+At a time only one thread is allowed to operate on that method
+
+
+3rd round (Technical)
+Java 8 features
+2 coding questions which need to be solved using Java 8
+
+Convert given array to HashMap
+Input: {1,2,3,4}
+Output: {{1,2}, {3,4}}
+
+First repeating character in a string
+Input: ramakrishna
+Output: a
