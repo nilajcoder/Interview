@@ -1,4 +1,13 @@
-
+/*
+ * 
+ * 
+ * Static keyword is commonly used for memory management.
+ * It is used in class variable methods blocks
+ * It is belongs to the class rather than instance of class
+ * 
+ * 
+ * 
+ */
 
 public class MethodCall {
 
