@@ -71,6 +71,7 @@ public class FirstArrayList {
          */
   
         list.remove(1);//removes element 2 
+        list.remove(Integer.valueOf(5));//removes the value 
         System.out.println("Elements are = "+list);
         
         /*
