@@ -16,8 +16,12 @@
  *  8.Add an element to specified index number
  *              
  * 9. Replace an element at specified position
+ * 
+ * 10.Sort the list 
+ * 
  *      
  */
+import java.util.Collections;
 import java.util.ArrayList;
 public class FirstArrayList {
 
@@ -85,6 +89,18 @@ public class FirstArrayList {
         */
         list.set(1,60);
         System.out.println("Elements are = "+list);
+
+
+        list.add(5);
+        list.add(100);
+        list.add(3);
+        System.out.println("Elements are = "+list );
+
+       /*
+        * Sort the list
+        */
+        Collections.sort(list);
+        System.out.println("Sorted List are "+list);
 
 
     }
