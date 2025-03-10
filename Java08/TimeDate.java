@@ -13,9 +13,14 @@
 8. DateTimeFormatter: Formats and parses dates and times
  */
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.Set;
+
 
 public class TimeDate {
 
@@ -67,6 +72,25 @@ public class TimeDate {
          LocalDateTime datetime=LocalDateTime.now();
          System.out.println("Local DAte Time ="+datetime);
 
+
+         /*
+          * ZonedateTime
+          */
+
+         ZonedDateTime zonetime=ZonedDateTime.now();
+         System.out.println("Zone Time = "+zonetime);
+
+       /*
+       Set<String> availabletimezone=ZoneId.getAvailableZoneIds();
+         availabletimezone.forEach(System.out::println);
+        */  
+
+
+        /*
+         * Create Instants
+         */
+        Instant instime=Instant.now();
+        System.out.println("Instant Time = "+instime);
 
 
         
