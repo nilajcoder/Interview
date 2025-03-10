@@ -1,11 +1,45 @@
 
 /*
 
+ What is Funtional Interface?
+ * 
+ * Ans -Functiol Interface having exactly single abstract method but 
+ * can have any number of static methods. 
+ * 
+We can invoke lambda epression by using functional Interface
+
 What is Predicate ?
 
-Ans: Predicate is a Functional Interface which contains one abstruct method
+Ans: Predicate is a Functional Interface which contains one abstruct method 
       it represents  a boolean valued function
-      boolean test(T,t);
+    1.  boolean test(T,t);
+
+     2.  default Predicate<T> and(Predicate<? super T> other) {
+        Objects.requireNonNull(other);
+        return (t) -> test(t) && other.test(t);
+
+
+       3.  default Predicate<T> negate() {
+        return (t) -> !test(t);
+    }
+
+    4. default Predicate<T> or(Predicate<? super T> other) {
+        Objects.requireNonNull(other);
+        return (t) -> test(t) || other.test(t);
+    }
+
+    5. static <T> Predicate<T> isEqual(Object targetRef) {
+        return (null == targetRef)
+                ? Objects::isNull
+                : object -> targetRef.equals(object);
+    }
+
+
+    6.   static <T> Predicate<T> not(Predicate<? super T> target) {
+        Objects.requireNonNull(target);
+        return (Predicate<T>)target.negate();
+
+
       Predicate holds the condition that condition is true or false
 
 */
