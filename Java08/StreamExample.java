@@ -1,3 +1,19 @@
+
+
+/*
+1 . How to create a List  and convert them into stream
+2. How to create a array of string convert them into stream
+3. How to create a stream
+4.Create a Stream of integers and return the even numbers as a list
+
+5. Divide the even numbers by 2 and return the list make sure list
+   has not duplicate value and list must be sorted.(ascending order)
+
+6. After division of even numbers return the list as a descending order
+
+*/
+
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
