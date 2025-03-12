@@ -21,6 +21,10 @@
 
 10. Find the length Of a String
 
+11. summrizing data (Count ,sum ,min ,max, avg)
+    Create a list of integers and summrize that
+
+
 
 ** what is stream?
     Introduced in Java 8 
@@ -34,8 +38,9 @@
 
 */
 
-
+import java.util.*;
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -121,6 +126,61 @@ public class StreamExample {
         System.out.println("String is = "+str);
         System.out.println("How many Occerence charecter l ="+str.toLowerCase().chars().filter(x->x=='l').count());
         System.out.println("Length of a String "+str.chars().count());
+
+
+        /*
+         * summrizing data (Count ,sum ,min ,max, avg)
+            Create a list of integers and summrize that
+         */
+        List<Integer> myint=Arrays.asList(5,1,2,6,8);
+        System.out.println("List is = "+myint);
+        IntSummaryStatistics stats=myint.stream().collect(Collectors.summarizingInt(x->x));
+        System.out.println("Count = "+stats.getCount());
+        System.out.println("Min = " + stats.getMin());
+        System.out.println("Max = "+stats.getMax());
+        System.out.println("Average = "+stats.getAverage());
+        System.out.println("Sum of the list = "+stats.getSum());
+
+
+
+        // 8. Grouping Elements
+        List<String> words = Arrays.asList("hello", "world", "java", "streams", "collecting");
+        System.out.println(words.stream().collect(Collectors.groupingBy(String::length)));
+        System.out.println(words.stream().collect(Collectors.groupingBy(String::length, Collectors.joining(", "))));
+        System.out.println(words.stream().collect(Collectors.groupingBy(String::length, Collectors.counting())));
+        TreeMap<Integer, Long> treeMap = words.stream().collect(Collectors.groupingBy(String::length, TreeMap::new, Collectors.counting()));
+        System.out.println(treeMap);
+
+
+
+         // Example 1: Collecting Names by Length
+         List<String> l1 = Arrays.asList("Anna", "Bob", "Alexander", "Brian", "Alice");
+         System.out.println(l1.stream().collect(Collectors.groupingBy(String::length)));
+ 
+         // Example 2: Counting Word Occurrences
+         String sentence = "hello world hello java world";
+         System.out.println(Arrays.stream(sentence.split(" ")).collect(Collectors.groupingBy(x -> x, Collectors.counting())));
+ 
+         // Example 3: Partitioning Even and Odd Numbers
+         List<Integer> l2 = Arrays.asList(1, 2, 3, 4, 5, 6);
+         System.out.println(l2.stream().collect(Collectors.partitioningBy(x -> x % 2 == 0)));
+ 
+         // Example 4: Summing Values in a Map
+         Map<String, Integer> items = new HashMap<>();
+         items.put("Apple", 10);
+         items.put("Banana", 20);
+         items.put("Orange", 15);
+         System.out.println(items.values().stream().reduce(Integer::sum));
+         System.out.println(items.values().stream().collect(Collectors.summingInt(x -> x)));
+ 
+         // Example 5: Creating a Map from Stream Elements
+         List<String> fruits = Arrays.asList("Apple", "Banana", "Cherry");
+         System.out.println(fruits.stream().collect(Collectors.toMap(x -> x.toUpperCase(), x -> x.length())));
+ 
+         // Example 6:
+         List<String> words2 = Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple");
+         System.out.println(words2.stream().collect(Collectors.toMap(k -> k, v -> 1, (x, y) -> x + y)));
+
 
     }
 }
