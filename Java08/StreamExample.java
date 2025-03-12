@@ -11,6 +11,16 @@
 
 6. After division of even numbers return the list as a descending order
 
+7. Create list of integers  squre of each value in sorted order.
+
+8. Create list of integer . Calculate sum of all integers. 
+
+9. Counting Occarence of a charecter 
+  Input: Hello
+   Output - 2 (l occurs 2 times)
+
+10. Find the length Of a String
+
 
 ** what is stream?
     Introduced in Java 8 
@@ -70,6 +80,10 @@ public class StreamExample {
                                          .distinct()
                                          .sorted()
                                          . collect(Collectors.toList());
+
+        /*
+         * Decending Order
+         */
         List<Integer> decendingorder = filterlist.stream().sorted((a,b)-> (b-a))
                                         .distinct()
                                         .collect(Collectors.toList());
@@ -77,6 +91,36 @@ public class StreamExample {
         System.out.println("Even numbers dividebytwo = "+ evendivisiontwo);
         System.out.println("Decending order of my integers = " + decendingorder);
 
+       /*
+        * Create list of integers  squre of each value in sorted order.
+        */
+        List<Integer> num= Arrays.asList(2,10,100,15,1);
+        System.out.println("List is "+ num);
+        System.out.println("Squre of Each number sorted order = "+ num.stream().map(x->x*x).sorted().toList());
+
+
+       /*
+        * Create list of integer . Calculate sum of all integers. 
+        Use Of reduce 
+
+        */
+        List<Integer> suminteger=Arrays.asList(1,2,3,4,5);
+        System.out.println("List is = "+suminteger);
+        System.out.println("Sum Of values = "+ suminteger.stream().reduce(Integer::sum).get());
+
+
+
+        /*
+         * Counting Occarence of a charecter 
+  Input: Hello
+   Output - 2 (l occurs 2 times)
+
+   Find the length Of a String
+         */
+        String str="HeLlo";
+        System.out.println("String is = "+str);
+        System.out.println("How many Occerence charecter l ="+str.toLowerCase().chars().filter(x->x=='l').count());
+        System.out.println("Length of a String "+str.chars().count());
 
     }
 }
