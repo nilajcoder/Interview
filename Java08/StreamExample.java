@@ -11,6 +11,17 @@
 
 6. After division of even numbers return the list as a descending order
 
+
+** what is stream?
+    Introduced in Java 8 
+    Process Collections of Data in a functional and declarative manner 
+    A sequence of element supporting functional and declarative programmimg
+    It is a Interface 
+    * Simplify data processing
+    *Embrace functiional Programming 
+    *Improve Readability and maintainability
+
+
 */
 
 
